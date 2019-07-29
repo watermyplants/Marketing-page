@@ -197,12 +197,6 @@ p {
 .btn btn:focus {
   outline: 0;
 }
-.middle-section h2 {
-  color: white;
-  text-align: center;
-  line-height: 40px;
-  padding: 40px 0;
-}
 .rectangle {
   display: flex;
   flex-direction: column;
@@ -215,6 +209,16 @@ p {
 }
 .rectangle p {
   letter-spacing: 0.13px;
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: auto;
+  padding: 2%;
+}
+.fas .fa-quote-left {
+  font-size: 1.5rem;
 }
 header {
   padding-bottom: 20px;
@@ -327,6 +331,9 @@ footer {
   max-width: 1140px;
   margin: 0 auto;
 }
+.main-content h1 {
+  font-weight: 600;
+}
 .main-content h1,
 h3,
 p {
@@ -353,6 +360,13 @@ p {
   background-color: #fff6f0;
   cursor: pointer;
 }
+.middle-section h2 {
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  padding: 40px 0;
+  font-weight: 600;
+}
 .about-bottom {
   display: flex;
   align-items: center;
@@ -361,4 +375,20 @@ p {
 .about-bottom p {
   color: #6E6E6E;
   font-size: 1.9rem;
+}
+.section-bottom {
+  padding-top: 5%;
+}
+.section-bottom h2 {
+  color: #78C885;
+  text-align: center;
+  font-weight: 600;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bottom .testimonials p {
+  color: black;
 }
