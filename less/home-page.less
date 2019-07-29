@@ -1,0 +1,47 @@
+// Home Content
+// Eralp Korucubasi
+
+.section-top {
+  background: #A1FFCE;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, @primary, @primary-background);
+  background: linear-gradient(to right, #aff4ba, @primary-background);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.main-content h1, h3, p {
+  color: white;
+  padding-top: 20px;
+}
+
+.main-content button {
+  .button(@second-btn, black, 10px 25px, center, none, 20px, 235px);
+  border: 2px solid @second-btn;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  border-radius: 39px;
+  margin-top: 5%;
+  
+  &:hover {
+    color: darken(@btn-signup, 5%);
+    background-color: lighten(@btn-signup, 40%);
+
+    .hover();
+  }
+}
+
+.about-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
