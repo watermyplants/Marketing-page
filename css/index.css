@@ -217,8 +217,15 @@ p {
   height: auto;
   padding: 2%;
 }
-.fas .fa-quote-left {
-  font-size: 1.5rem;
+.testimonials img {
+  width: 50%;
+  margin-top: 7%;
+}
+.testimonials .fas {
+  color: #78C885;
+}
+.testimonials span {
+  color: white;
 }
 header {
   padding-bottom: 20px;
@@ -390,5 +397,8 @@ p {
   justify-content: space-around;
 }
 .bottom .testimonials p {
-  color: black;
+  color: #3E3E3E;
+}
+.bottom .testimonials .img-right {
+  align-self: flex-end;
 }
