@@ -69,8 +69,17 @@ p {
 }
 
 .rectangle {
-  height: 300;
-  width: 20%;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: auto;
+  padding: 2%;
   border-radius: 15px;
   background-color: @rectangle;
+  text-align: center;
+}
+
+.rectangle p {
+  letter-spacing: 0.13px;
+
 }
