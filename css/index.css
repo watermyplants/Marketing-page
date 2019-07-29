@@ -197,12 +197,17 @@ p {
 .btn btn:focus {
   outline: 0;
 }
+.middle-section h2 {
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  padding: 40px 0;
+}
 .rectangle {
   height: 300;
-  width: 30%;
+  width: 20%;
   border-radius: 15px;
   background-color: #FEFDF8;
-  color: #6E6E6E;
 }
 header {
   padding-bottom: 20px;
@@ -303,7 +308,7 @@ footer {
   background: #A1FFCE;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #78C885, #198974);
-  background: linear-gradient(to right, #aff4ba, #198974);
+  background: linear-gradient(119.38deg, #99DE99 0%, #258D79 100%);
 }
 .about {
   display: flex;
