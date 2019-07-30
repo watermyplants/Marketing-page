@@ -54,21 +54,24 @@ header .navigation .tab a, button {
   font-family: "Source Sans Pro";
 }
 
-a {
-  text-decoration: none;
-  color: @btn-login;
-  font-size: 2rem;
-  font-weight: 600;
 
-  &:hover {
-    color: @crimson;
-    transition: 0.5s;
-  }
+.navigation > .tab > a {
+  .button-under-strike();
+  // text-decoration: none;
+  // color: @btn-login;
+  // font-size: 2rem;
+  // font-weight: 600;
+
+  // &:hover {
+  //   color: @crimson;
+  //   transition: 0.5s;
+  // }
+  // &:active {
+  //   color: @crimson;
+  // }
 }
 
-a.active {
-  color: @crimson;
-}
+// a.
 // .button(@backColor: @btn-bg-color, @color: @wild-sand, @padding: 10px 25px, @text-align: center, @decoration: none, @font-size: 20px, @width: 120px)
 
 header .navigation .tab button {
