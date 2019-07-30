@@ -317,14 +317,12 @@ header .navigation .tab button {
   cursor: pointer;
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #556E64;
+  height: 130px;
+}
+footer address p {
+  font-size: 1.2rem;
+  line-height: 2px;
 }
 .logo img {
   height: 40px;
