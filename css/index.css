@@ -233,7 +233,7 @@ p {
   color: white;
 }
 header {
-  padding-bottom: 20px;
+  padding: 20px 0 10px 0;
   margin-bottom: 20px;
 }
 header .navigation {
@@ -254,12 +254,16 @@ header .navigation .tab {
 }
 header .navigation .logo {
   display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 35px;
 }
 .logo img {
   margin-right: 10px;
 }
 .logo h1 {
-  font-size: 3.5rem;
+  font-size: 3.6rem;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
   color: #78C885;
@@ -289,7 +293,7 @@ header .navigation .tab button {
 .log-in {
   background-color: white;
   color: #009672;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -304,7 +308,7 @@ header .navigation .tab button {
 .sign-up {
   background-color: #FF7D24;
   color: white;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -357,10 +361,6 @@ footer i {
 .policy {
   display: flex;
   justify-content: space-between;
-}
-.logo img {
-  height: 40px;
-  margin-bottom: 5%;
 }
 .section-top {
   background: #A1FFCE;

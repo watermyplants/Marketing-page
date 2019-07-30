@@ -5,8 +5,8 @@
 //   padding: 5%;
 // }
 header {
-  // border-bottom: 1px solid #0d122b;
-  padding-bottom: 20px;
+  padding: 20px 0 10px 0;
+  // padding-bottom: 20px;
   margin-bottom: 20px;
 }
 
@@ -30,6 +30,11 @@ header .navigation .tab {
 
 header .navigation .logo {
   display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 35px;
 }
 
 .logo img {
@@ -38,7 +43,7 @@ header .navigation .logo {
 
 .logo {
   h1 {
-    font-size: 3.5rem;
+    font-size: 3.6rem;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     color: @primary;
@@ -73,7 +78,7 @@ header .navigation .tab button {
 }
 
 .log-in {
-  .button(white, @btn-login, 10px, center, none, 20px);
+  .button(white, @btn-login, 5px, center, none, 20px);
   border: 2px solid @btn-login;
   &:hover {
     color: lighten(@btn-login, 70%);
@@ -84,7 +89,7 @@ header .navigation .tab button {
 }
 
 .sign-up {
-  .button(@btn-signup, white, 10px, center, none, 20px);
+  .button(@btn-signup, white, 5px, center, none, 20px);
   border: 2px solid @btn-signup;
   text-transform: uppercase;
   &:hover {
