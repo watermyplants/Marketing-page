@@ -224,7 +224,7 @@ p {
 .testimonials img {
   width: 50%;
   height: auto;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .testimonials .fas {
   color: #78C885;
@@ -319,11 +319,44 @@ header .navigation .tab button {
 }
 footer {
   background-color: #556E64;
-  height: 130px;
+  padding: 15px 0 25px 0;
 }
-footer address p {
-  font-size: 1.2rem;
-  line-height: 2px;
+.footer {
+  font-family: 'Roboto', sans-serif;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+.footer p {
+  font-size: 11px;
+  line-height: 1px;
+  letter-spacing: 0.5px;
+  font-weight: lighter;
+}
+footer span {
+  font-weight: 400;
+}
+footer i {
+  color: white;
+}
+.footer .copy-right {
+  align-self: flex-end;
+}
+.footer .social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+}
+.policy {
+  display: flex;
+  justify-content: space-between;
 }
 .logo img {
   height: 40px;
@@ -336,6 +369,13 @@ footer address p {
   background: linear-gradient(119.38deg, #99DE99 0%, #258D79 100%);
   padding-top: 2%;
   padding-bottom: 5%;
+}
+.section-top h2 {
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  padding: 40px 0;
+  font-weight: 600;
 }
 .about {
   display: flex;
@@ -358,7 +398,7 @@ p {
 }
 .main-content button {
   background-color: #f9ff00;
-  color: black;
+  color: #5B5B5B;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
@@ -372,8 +412,8 @@ p {
   height: 65px;
 }
 .main-content button:hover {
-  color: #ff6e0a;
-  background-color: #fff6f0;
+  color: #000000;
+  background-color: #54b964;
   cursor: pointer;
 }
 .middle-section {
@@ -381,13 +421,6 @@ p {
   justify-content: space-around;
   max-width: 1140px;
   margin: 0 auto;
-}
-.section-top h2 {
-  color: white;
-  text-align: center;
-  line-height: 40px;
-  padding: 40px 0;
-  font-weight: 600;
 }
 .about-bottom {
   display: flex;
@@ -401,21 +434,21 @@ p {
   font-size: 1.9rem;
 }
 .section-bottom {
-  padding-top: 9%;
+  padding-top: 7%;
 }
 .section-bottom h2 {
   color: #78C885;
   text-align: center;
   font-weight: 600;
-  margin-bottom: -70px;
+  margin-bottom: -60px;
 }
 .bottom {
   display: flex;
   align-items: center;
   justify-content: space-around;
   max-width: 1300px;
-  margin-top: -100px;
   margin: 0 auto;
+  height: 450px;
 }
 .bottom .testimonials p {
   color: #3E3E3E;
@@ -425,7 +458,7 @@ p {
   align-self: flex-end;
 }
 .bottom .testimonials-middle {
-  padding-top: 15%;
+  align-self: flex-end;
 }
 .section-join {
   background: #007156;
@@ -436,7 +469,7 @@ p {
   justify-content: space-evenly;
   height: 190px;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1100px;
 }
 .join-now h2 {
   color: white;
@@ -457,7 +490,7 @@ p {
   height: 65px;
 }
 .join-now button:hover {
-  color: #ff6e0a;
-  background-color: #fff6f0;
+  color: #000000;
+  background-color: #54b964;
   cursor: pointer;
 }
