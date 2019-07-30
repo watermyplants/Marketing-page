@@ -1,0 +1,29 @@
+
+.join-now {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 190px;
+  background: #007156;
+}
+
+.join-now h2 {
+  color: white;
+}
+
+.join-now button {
+  .button(#007156, @second-btn, 10px 25px, center, none, 20px, 200px);
+  border: 2px solid @second-btn;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  border-radius: 39px;
+  margin-top: 5%;
+  height: 65px;
+  
+  &:hover {
+    color: darken(@btn-signup, 5%);
+    background-color: lighten(@btn-signup, 40%);
+
+    .hover();
+  }
+}
