@@ -206,6 +206,14 @@ p {
   border-radius: 15px;
   background-color: #FEFDF8;
   text-align: center;
+  box-shadow: 5px 10px 18px #888888;
+  margin-bottom: 5%;
+}
+@media (max-width: 800px) {
+  .rectangle {
+    margin-bottom: 6%;
+    width: 80%;
+  }
 }
 .rectangle p {
   letter-spacing: 0.13px;
@@ -494,12 +502,19 @@ footer i {
   font-weight: 600;
   text-shadow: 2px 2px 2px rgba(36, 81, 33, 0.63);
 }
-.main-content > h1,
+.main-content h1,
 h3,
 p {
   color: white;
   padding-top: 20px;
   text-shadow: 1px 1px 1px rgba(36, 81, 33, 0.63);
+}
+@media (max-width: 800px) {
+  .main-content h1 .p-white,
+  h3 .p-white,
+  p .p-white {
+    color: white !important;
+  }
 }
 .main-content button {
   background-color: #f9ff00;
@@ -546,8 +561,8 @@ p {
     max-width: 750px;
   }
   .about-bottom .rectangle {
-    margin-bottom: 5%;
-    width: 80%;
+    margin-bottom: 6%;
+    width: 90%;
   }
 }
 .about-bottom p {
@@ -687,7 +702,12 @@ header .navigation .about-tab {
   padding-top: 5%;
   margin: 0 auto;
 }
-.top > h3,
+@media (max-width: 800px) {
+  .top {
+    width: 90%;
+  }
+}
+.top h3,
 p {
   color: black;
 }
@@ -700,6 +720,12 @@ p {
   align-items: center;
   max-width: 1140px;
   margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .container-fluid {
+    max-width: 90%;
+    height: auto;
+  }
 }
 .intro {
   text-align: center;
@@ -718,8 +744,18 @@ p {
   align-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  height: 800px;
+  height: auto;
   margin: 3% 0 5% 0;
+}
+@media (max-width: 800px) {
+  .build-team {
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+  }
+  .build-team .rectangle {
+    background: #e2f3e2;
+  }
 }
 .last {
   align-self: auto;
