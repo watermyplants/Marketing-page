@@ -1,6 +1,10 @@
 // Home Content
 // Eralp Kor
 
+// .container {
+//   width: 90%;
+// }
+
 .section-top {
   background: #A1FFCE;
   /* fallback for old browsers */
@@ -27,6 +31,11 @@
   max-width: 1140px;
   margin: 0 auto;
   padding-bottom: 3%;
+
+  @media @tablet {
+    flex-direction: column;
+    width: 90%;
+  }
 }
 
 .main-content h1 {
@@ -62,15 +71,30 @@
   justify-content: space-around;
   max-width: 1140px;
   margin: 0 auto;
+  
+  @media @tablet {
+    width: 90%;
+  }
 }
 
 
 .about-bottom {
   display: flex;
-  // align-items: center;
+  align-items: center;
   justify-content: space-between;
   .width();
   margin: 0 auto;
+
+  @media @tablet {
+    flex-direction: column;
+    justify-content: center;
+    // align-content: space-between;
+    max-width: 750px;
+    .rectangle {
+      margin-bottom: 5%;
+      width: 80%;
+    }
+  }
 }
 
 .about-bottom p {

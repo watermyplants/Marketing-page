@@ -1,13 +1,20 @@
 // Navigation code here
 
+@media @tablet {
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
 
 // .nav() {
 //   padding: 5%;
 // }
 header {
   padding: 20px 0 10px 0;
-  // padding-bottom: 20px;
   margin-bottom: 20px;
+
+  @media @tablet {
+    padding: 0;
+  }
 }
 
 header .navigation {
@@ -19,6 +26,10 @@ header .navigation {
   margin: 0 auto;
   padding-top: 20px;
   font-family: 'Source Sans Pro', sans-serif;
+
+  @media @tablet {
+    max-width: 700px;
+  }
 }
 
 header .navigation .tab {
@@ -26,6 +37,10 @@ header .navigation .tab {
   align-items: center;
   justify-content: space-around;
   width: 350px;
+
+  @media @tablet{
+    width: 50%;
+  }
 }
 
 header .navigation .logo {
@@ -35,6 +50,10 @@ header .navigation .logo {
 
 .logo img {
   width: 35px;
+
+  @media @tablet {
+    width: 25px;
+  }
 }
 
 .logo img {
@@ -47,35 +66,29 @@ header .navigation .logo {
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     color: @primary;
+
+    @media @tablet {
+      font-size: 2rem;
+    }
   }
 }
 
-header .navigation .tab a, button {
+header .navigation .tab a,
+button {
   font-family: "Source Sans Pro";
 }
 
 
-.navigation > .tab > a {
+.navigation>.tab>a {
   .button-under-strike();
-  // text-decoration: none;
-  // color: @btn-login;
-  // font-size: 2rem;
-  // font-weight: 600;
-
-  // &:hover {
-  //   color: @crimson;
-  //   transition: 0.5s;
-  // }
-  // &:active {
-  //   color: @crimson;
-  // }
+  font-size: 1.7rem;
 }
 
 // a.
 // .button(@backColor: @btn-bg-color, @color: @wild-sand, @padding: 10px 25px, @text-align: center, @decoration: none, @font-size: 20px, @width: 120px)
 
 header .navigation .tab button {
-  box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
   border-radius: 2px;
   font-weight: 600;
 }
@@ -83,11 +96,19 @@ header .navigation .tab button {
 .log-in {
   .button(white, @btn-login, 5px, center, none, 20px);
   border: 2px solid @btn-login;
+
   &:hover {
     color: lighten(@btn-login, 70%);
     background-color: darken(@btn-login, 5%);
 
     .hover();
+  }
+
+  @media @tablet {
+    .button(white, @btn-login, 5px, center, none, 10px);
+    border: 1px solid @btn-login;
+    width: 75px;
+    font-size: 15px;
   }
 }
 
@@ -95,10 +116,18 @@ header .navigation .tab button {
   .button(@btn-signup, white, 5px, center, none, 20px);
   border: 2px solid @btn-signup;
   text-transform: uppercase;
+
   &:hover {
     color: darken(@btn-signup, 5%);
     background-color: lighten(@btn-signup, 40%);
 
     .hover();
+  }
+
+  @media @tablet {
+    .button(@btn-signup, white, 5px, center, none, 10px);
+    border: 1px solid @btn-signup;
+    width: 75px;
+    font-size: 15px;
   }
 }

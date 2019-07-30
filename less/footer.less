@@ -4,6 +4,10 @@ footer {
   padding: 5px 0 25px 0;
 }
 
+.footer .copy-right {
+  align-self: flex-end;
+}
+
 .footer {
   font-family: 'Roboto', sans-serif;
   height: 130px;
@@ -11,6 +15,26 @@ footer {
   justify-content: space-between;
   max-width: 1260px;
   margin: 0 auto;
+
+  @media @tablet {
+    max-width: 90%;
+  }
+
+  @media @phone {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: auto;
+
+    // address {
+    //   max-width: 50%;
+    // }
+
+    .copy-right {
+    align-self: auto;
+    padding-bottom: 2%;
+    }
+  }
 }
 
 
@@ -30,9 +54,7 @@ footer i{
   color: white;
 }
 
-.footer .copy-right {
-  align-self: flex-end;
-}
+
 
 .footer .social {
   // width: 130px;
@@ -46,7 +68,16 @@ footer i{
   flex-direction: column;
   justify-content: center;
   width: 160px;
-  // height: 140px;
+
+  // @media @tablet {
+  //   align-items: center;
+  // }
+  @media @phone {
+    align-items: center;
+    justify-content: space-around;
+    // width: auto;
+    margin: 0 auto;
+  }
 }
 
 .policy {
