@@ -351,6 +351,7 @@ footer {
   line-height: 1px;
   letter-spacing: 0.5px;
   font-weight: lighter;
+  color: white;
 }
 footer span {
   font-weight: 400;
@@ -605,8 +606,8 @@ p {
   width: 100%;
   height: 800px;
 }
-.build-team :last-child {
-  align-self: flex-start;
+.last {
+  align-self: auto;
 }
 .rectangle > h3 {
   color: #009672;
