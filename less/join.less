@@ -1,0 +1,33 @@
+
+.section-join {
+  background: #007156;
+}
+.join-now {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 190px;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.join-now h2 {
+  color: white;
+}
+
+.join-now button {
+  .button(#007156, @second-btn, 10px 25px, center, none, 20px, 200px);
+  border: 2px solid @second-btn;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  border-radius: 39px;
+  margin-top: 5%;
+  height: 65px;
+  
+  &:hover {
+    color: darken(#007156, 50%);
+    background-color: darken(#78C885, 10%);
+
+    .hover();
+  }
+}

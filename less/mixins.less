@@ -1,0 +1,52 @@
+// Mixins Here
+
+.width(@width: 100%) {
+  width: @width;
+}
+
+.button(@backColor: white, @color: @wild-sand, @padding: 10px 25px, @text-align: center, @decoration: none, @font-size: 20px, @width: 120px) {
+
+  background-color: @backColor;
+  color: @color;
+  padding: @padding;
+  text-align: @text-align;
+  text-decoration: @decoration;
+  font-size: @font-size;
+  width: @width;
+}
+
+.buttonTransition(@webkit: 0.4s, @transition: 0.4s) {
+  -webkit-transition-duration: @webkit;
+  transition-duration: @transition;
+}
+
+
+.round-borders {
+  border-radius: 7px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+// .border{
+//   border: 2px solid @btn-bg-color;
+// }
+
+.hover(@cursor: pointer) {
+  cursor: @cursor;
+}
+
+.wrap {
+  color: @river-bend;
+  animation-name: larger;
+  animation-duration: 3s;
+}
+
+@keyframes larger {
+  from {
+    color: gold;
+  }
+
+  to {
+    color: @crimson;
+  }
+}

@@ -1,0 +1,106 @@
+// General Styles
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: @main-font-color;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  // font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: @header-font-color;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.container {
+  // max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// Global button properties Eralp Korucubasi
+.btn {
+  .button(white, @wild-sand, 10px, center, none, 20px);
+  .buttonTransition();
+
+  text-decoration: none;
+  font-size: 20px;
+  // .border();
+  .round-borders();
+
+  btn:focus {
+    outline: 0;
+  }
+}
+
+.rectangle {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  padding: 2%;
+  border-radius: 15px;
+  background-color: @rectangle;
+  text-align: center;
+}
+
+.rectangle p {
+  letter-spacing: 0.13px;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: auto;
+  padding: 2%;
+}
+
+.testimonials p {
+  letter-spacing: 0.1px;
+  font-size: 1.4rem;
+}
+
+.testimonials img {
+  width: 50%;
+  height: auto;
+  margin-top: 30px;
+  // margin-top: 1%;
+}
+
+.testimonials .fas {
+  color: @primary;
+}
+
+.testimonials span {
+  color: white;
+}
+

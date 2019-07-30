@@ -1,0 +1,101 @@
+// Navigation code here
+
+
+// .nav() {
+//   padding: 5%;
+// }
+header {
+  padding: 20px 0 10px 0;
+  // padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+header .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header .navigation .tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 350px;
+}
+
+header .navigation .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 35px;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+.logo {
+  h1 {
+    font-size: 3.6rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    color: @primary;
+  }
+}
+
+header .navigation .tab a, button {
+  font-family: "Source Sans Pro";
+}
+
+a {
+  text-decoration: none;
+  color: @btn-login;
+  font-size: 2rem;
+  font-weight: 600;
+
+  &:hover {
+    color: @crimson;
+    transition: 0.5s;
+  }
+}
+
+a.active {
+  color: @crimson;
+}
+// .button(@backColor: @btn-bg-color, @color: @wild-sand, @padding: 10px 25px, @text-align: center, @decoration: none, @font-size: 20px, @width: 120px)
+
+header .navigation .tab button {
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.log-in {
+  .button(white, @btn-login, 5px, center, none, 20px);
+  border: 2px solid @btn-login;
+  &:hover {
+    color: lighten(@btn-login, 70%);
+    background-color: darken(@btn-login, 5%);
+
+    .hover();
+  }
+}
+
+.sign-up {
+  .button(@btn-signup, white, 5px, center, none, 20px);
+  border: 2px solid @btn-signup;
+  text-transform: uppercase;
+  &:hover {
+    color: darken(@btn-signup, 5%);
+    background-color: lighten(@btn-signup, 40%);
+
+    .hover();
+  }
+}
