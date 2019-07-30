@@ -98,10 +98,24 @@ header .navigation .tab {
 
 .build-team {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-content: space-between;
+  // align-items: 
+  flex-wrap: wrap;
   .width();
+  height: 800px;
+}
+
+.build-team :last-child {
+  align-self: flex-start;
 }
 
 .rectangle > h3 {
+  // width: 200px;
   color: #009672;
 }
+
+// .rectangle-group {
+//   display: flex;
+  
+// }

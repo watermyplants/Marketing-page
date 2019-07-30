@@ -599,8 +599,14 @@ p {
 }
 .build-team {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
+  height: 800px;
+}
+.build-team :last-child {
+  align-self: flex-start;
 }
 .rectangle > h3 {
   color: #009672;
