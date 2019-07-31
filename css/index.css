@@ -438,6 +438,7 @@ footer {
 }
 .footer .copy-right {
   align-self: flex-end;
+  text-align: center;
 }
 .footer {
   font-family: 'Roboto', sans-serif;
@@ -447,6 +448,9 @@ footer {
   max-width: 1260px;
   margin: 0 auto;
   padding: 0 20px;
+}
+.footer .footer-hide {
+  display: none;
 }
 @media (max-width: 800px) {
   .footer {
@@ -467,8 +471,7 @@ footer {
     align-items: center;
   }
   .footer .copy-right {
-    align-self: auto;
-    padding-bottom: 2%;
+    display: none;
   }
 }
 .footer p {
@@ -499,6 +502,12 @@ footer i {
   flex-direction: column;
   justify-content: center;
   width: 160px;
+}
+@media (max-width: 800px) {
+  .footer-right {
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
 }
 @media (max-width: 500px) {
   .footer-right {
@@ -1018,5 +1027,5 @@ p {
   align-self: auto;
 }
 .rectangle > h3 {
-  color: #009672;
+  color: #258e79;
 }

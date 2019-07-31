@@ -6,6 +6,7 @@ footer {
 
 .footer .copy-right {
   align-self: flex-end;
+  text-align: center;
 }
 
 .footer {
@@ -16,6 +17,10 @@ footer {
   max-width: 1260px;
   margin: 0 auto;
   padding: 0 20px;
+
+  .footer-hide {
+    display: none;
+  }
 
   @media @tablet {
     max-width: 90%;
@@ -35,8 +40,9 @@ footer {
     }
 
     .copy-right {
-    align-self: auto;
-    padding-bottom: 2%;
+      display: none;
+      // align-self: auto;
+      // padding-bottom: 2%;
     }
   }
 }
@@ -54,7 +60,7 @@ footer span {
   font-weight: 400;
 }
 
-footer i{
+footer i {
   color: white;
 }
 
@@ -77,9 +83,11 @@ footer i{
   justify-content: center;
   width: 160px;
 
-  // @media @tablet {
-  //   align-items: center;
-  // }
+  @media @tablet {
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+
   @media @phone {
     align-items: center;
     justify-content: space-around;
