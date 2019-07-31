@@ -16,23 +16,20 @@ function expandNav() {
 //   else nav.className = 'changeColor';
 // };
 
-document.addEventListener("DOMContentLoaded", function(event) {
-  var test = document.querySelector('.test');
-  var copy = document.querySelector('.copy-right');
+// document.addEventListener("DOMContentLoaded", function(event) {
+//   var test = document.querySelector('.test');
+//   var copy = document.querySelector('.copy-right');
 
 
-  function resize() {
-    if (window.innerWidth <= 500) {
-      test.classList.add('mobile');
-      // test.classList.toggle('remove');
-      copy.classList.add('remove');
-    } else {
-      test.classList.remove('mobile');
-      copy.classList.remove('remove');
-    }
-  }
-  // For performance reasons, this method should be 
-  // "debounced" so that it doesn't have to execute 
-  // on every resize event, only when you're done resizing.
-  window.onresize = resize;
-});
+//   function resize() {
+//     if (window.innerWidth <= 500) {
+//       test.classList.add('mobile');
+//       // test.classList.toggle('remove');
+//       copy.classList.add('remove');
+//     } else {
+//       test.classList.remove('mobile');
+//       copy.classList.remove('remove');
+//     }
+//   }
+//   window.onresize = resize;
+// });
