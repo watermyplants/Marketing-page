@@ -89,10 +89,11 @@ header .navigation .about-tab {
 
   @media @tablet {
     .width(90%);
+    text-align: center;
   }
 
   @media @phone {
-    .width(90);
+    .width(90%);
     text-align: center;
   }
 }
@@ -151,10 +152,19 @@ header .navigation .about-tab {
 
 .build-team {
   display: flex;
+  // align-items: center;//
   justify-content: space-between;
   align-content: space-between;
-  // align-items: 
+  // flex-flow: column wrap;//
   flex-wrap: wrap;
+  // margin: 0 auto;
+  // max-width: 75%;
+  // height: 500px;
+
+  .last {
+    align-self: center;
+  }
+
   .width();
   height: auto;
   margin: 3% 0 5% 0;
@@ -166,6 +176,10 @@ header .navigation .about-tab {
 
     .rectangle {
       background: #e2f3e2;
+
+      img {
+        width: 25%;
+      }
     }
   }
 
@@ -179,10 +193,10 @@ header .navigation .about-tab {
   }
 }
 
-.last {
-  align-self: auto;
-  // flex-grow: 1;
-}
+// .last {
+//   align-self: auto;
+//   // flex-grow: 1;
+// }
 
 .rectangle>h3 {
   padding-bottom: 5%;

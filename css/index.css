@@ -213,13 +213,13 @@ p {
   width: 30%;
   clip-path: circle(50% at 50% 50%);
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .rectangle {
     margin-bottom: 6%;
     width: 80%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   font-size: 1.3rem;
   margin-left: 10px;
 }
@@ -227,7 +227,7 @@ header {
   padding: 20px 0 10px 0;
   margin-bottom: 20px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   header {
     padding: 0;
   }
@@ -248,7 +248,7 @@ header .navigation {
   font-family: 'Source Sans Pro', sans-serif;
   padding-left: 20px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   header .navigation {
     max-width: 700px;
   }
@@ -268,7 +268,7 @@ header .navigation .tab {
 header .navigation .tab .no-show {
   display: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   header .navigation .tab {
     width: 50%;
   }
@@ -308,7 +308,7 @@ header .navigation .logo {
 .logo img {
   width: 35px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .logo img {
     width: 25px;
   }
@@ -327,7 +327,7 @@ header .navigation .logo {
   font-family: 'Raleway', sans-serif;
   color: #78C885;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .logo h1 {
     font-size: 2rem;
   }
@@ -388,7 +388,7 @@ header .navigation .tab button {
   background-color: #007d5f;
   cursor: pointer;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .log-in {
     background-color: white;
     color: #009672;
@@ -418,7 +418,7 @@ header .navigation .tab button {
   background-color: #fff6f0;
   cursor: pointer;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .sign-up {
     background-color: #FF7D24;
     color: white;
@@ -452,7 +452,7 @@ footer {
 .footer .footer-hide {
   display: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .footer {
     max-width: 90%;
   }
@@ -503,7 +503,7 @@ footer i {
   justify-content: center;
   width: 160px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .footer-right {
     justify-content: flex-start;
     padding-top: 20px;
@@ -558,7 +558,7 @@ footer i {
   margin: 0 auto;
   padding: 0 20px 3% 20px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .about {
     flex-direction: column;
     width: 90%;
@@ -587,7 +587,7 @@ p {
     display: none;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .main-content {
     padding: 5%;
   }
@@ -632,7 +632,7 @@ p {
   max-width: 1140px;
   margin: 0 auto;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .middle-section {
     width: 90%;
   }
@@ -650,7 +650,7 @@ p {
   margin: 0 auto;
   padding: 0 20px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .about-bottom {
     flex-direction: column;
     justify-content: center;
@@ -659,6 +659,7 @@ p {
   .about-bottom .rectangle {
     margin-bottom: 6%;
     width: 90%;
+    padding: 5%;
   }
 }
 @media (max-width: 500px) {
@@ -684,6 +685,11 @@ p {
 .section-bottom {
   padding-top: 7%;
   height: auto;
+}
+@media (max-width: 500px) {
+  .section-bottom {
+    padding: 10% 5% 10%;
+  }
 }
 .section-bottom h2 {
   color: #78C885;
@@ -782,7 +788,7 @@ p {
 .join-now .no-show {
   display: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .join-now {
     max-width: 90%;
     flex-direction: column;
@@ -934,14 +940,15 @@ header .navigation .about-tab {
   padding-top: 5%;
   margin: 0 auto;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .top {
     width: 90%;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
   .top {
-    width: 90;
+    width: 90%;
     text-align: center;
   }
 }
@@ -967,7 +974,7 @@ p {
   margin: 0 auto;
   padding: 0 20px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .container-fluid {
     width: 90;
     height: auto;
@@ -1003,7 +1010,10 @@ p {
   height: auto;
   margin: 3% 0 5% 0;
 }
-@media (max-width: 800px) {
+.build-team .last {
+  align-self: center;
+}
+@media (max-width: 1000px) {
   .build-team {
     margin: 0 auto;
     width: 90;
@@ -1011,6 +1021,9 @@ p {
   }
   .build-team .rectangle {
     background: #e2f3e2;
+  }
+  .build-team .rectangle img {
+    width: 25%;
   }
 }
 @media (max-width: 500px) {
@@ -1022,9 +1035,6 @@ p {
     border-radius: 0;
     background: #eafae9;
   }
-}
-.last {
-  align-self: auto;
 }
 .rectangle > h3 {
   padding-bottom: 5%;
