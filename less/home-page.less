@@ -15,6 +15,7 @@
 
   @media @phone {
     background: #1c9179;
+    padding: 0;
   }
 }
 
@@ -51,6 +52,10 @@
   color: white;
   padding-top: 20px;
   text-shadow: 1px 1px 1px rgba(36,81,33,0.63);
+
+  @media @phone {
+    text-shadow: none;
+  }
 }
 
 .main-content {
@@ -78,8 +83,10 @@
   }
 
   @media @phone {
-  .button(@second-btn, #5B5B5B, 10px 25px, center, none, 20px, 200px);
-
+  .button(@second-btn, #5B5B5B, 5px 20px, center, none, 20px, 175px);
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 45px;
   }
 }
 
@@ -91,6 +98,10 @@
   
   @media @tablet {
     width: 90%;
+  }
+
+  @media @phone {
+    .width();
   }
 }
 
@@ -112,16 +123,33 @@
       width: 90%;
     }
   }
+
+  @media @phone {
+    padding-top: 5%;
+
+    .rectangle {
+      .width();
+      border-radius: 0;
+      background: whitesmoke;
+    }
+  }
+
+  
 }
 
 .about-bottom p {
   color: #6E6E6E;
   font-size: 1.9rem;
+
+  @media @phone {
+    color: black;
+    font-size: 1.5rem;
+  }
 }
 
 .section-bottom {
   padding-top: 7%;
-  // height: 700px;
+  height: auto;
 }
 
 .section-bottom h2 {
@@ -129,6 +157,10 @@
   text-align: center;
   font-weight: 600;
   margin-bottom: -60px;
+
+  @media @phone {
+    margin-bottom: 10px;
+  }
 }
 
 .bottom {
@@ -139,6 +171,15 @@
   // margin-top: -100px;
   margin: 0 auto;
   height: 450px;
+
+  @media @phone {
+    flex-direction: column;
+    // justify-content: center;
+    // align-content: center;
+    height: auto;
+    .width();
+    margin: 0 auto;
+  }
 }
 
 .bottom .testimonials p{
@@ -148,11 +189,58 @@
 
 .bottom .testimonials .img-right {
   align-self: flex-end;
+
+  @media @phone {
+    align-self: center;
+  }
 }
 
 .bottom .testimonials-middle {
   // padding-top: 15%;
   align-self: flex-end;
+}
+
+.rectangle p {
+  letter-spacing: 0.13px;
+  
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: auto;
+  padding: 2%;
+
+  @media @phone {
+    .width();
+    margin: 0 auto;
+  }
+}
+
+.testimonials p {
+  letter-spacing: 0.1px;
+  font-size: 1.4rem;
+}
+
+.testimonials img {
+  width: 50%;
+  height: auto;
+  margin-top: 30px;
+  
+  @media @phone {
+    width: 25%;
+    align-self: center;
+
+  }
+}
+
+.testimonials .fas {
+  color: @primary;
+}
+
+.testimonials span {
+  color: white;
 }
 
 #p-white {

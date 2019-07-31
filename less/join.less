@@ -2,6 +2,7 @@
 .section-join {
   background: #007156;
 }
+
 .join-now {
   display: flex;
   align-items: center;
@@ -9,6 +10,10 @@
   height: 190px;
   margin: 0 auto;
   max-width: 1100px;
+
+  .no-show {
+    display: none;
+  }
 
   @media @tablet {
     max-width: 90%;
@@ -18,10 +23,23 @@
       font-size: 2.3rem;
     }
   }
+
+  @media @phone {
+    text-align: center;
+
+    .no-show {
+      display: block;
+    }
+    .remove-me {
+      display: none;
+    }
+
+  }
 }
 
 .join-now h2 {
   color: white;
+
 }
 
 .join-now button {
@@ -38,5 +56,11 @@
     background-color: darken(#78C885, 10%);
 
     .hover();
+  }
+
+  @media @phone {
+  .button(#007156, @second-btn, 10px 20px, center, none, 15px, 150px);
+  height: 55px;
+    
   }
 }
