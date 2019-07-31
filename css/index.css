@@ -242,6 +242,7 @@ header .navigation {
   margin: 0 auto;
   padding-top: 20px;
   font-family: 'Source Sans Pro', sans-serif;
+  padding-left: 20px;
 }
 @media (max-width: 800px) {
   header .navigation {
@@ -250,6 +251,7 @@ header .navigation {
 }
 @media (max-width: 500px) {
   header .navigation {
+    padding: 10px 0;
     display: block;
   }
 }
@@ -540,7 +542,7 @@ footer i {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-  padding-bottom: 3%;
+  padding: 0 20px 3% 20px;
 }
 @media (max-width: 800px) {
   .about {
@@ -569,6 +571,11 @@ p {
 @media (max-width: 500px) {
   .main-content img {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  .main-content {
+    padding: 5%;
   }
 }
 .main-content button {
@@ -627,6 +634,7 @@ p {
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 }
 @media (max-width: 800px) {
   .about-bottom {
