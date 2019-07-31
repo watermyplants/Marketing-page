@@ -12,6 +12,10 @@
   background: linear-gradient(119.38deg, #7EFF7D 0%, #258D79 100%);
   padding-top: 2%;
   padding-bottom: 5%;
+
+  @media @phone {
+    background: #1c9179;
+  }
 }
 
 .section-top h2 {
@@ -47,10 +51,12 @@
   color: white;
   padding-top: 20px;
   text-shadow: 1px 1px 1px rgba(36,81,33,0.63);
+}
 
-  @media @tablet {
-    .p-white {
-      color: white !important;
+.main-content {
+  @media @phone {
+    img {
+      display: none;
     }
   }
 }
@@ -69,6 +75,11 @@
     background-color: darken(#78C885, 10%);
 
     .hover();
+  }
+
+  @media @phone {
+  .button(@second-btn, #5B5B5B, 10px 25px, center, none, 20px, 200px);
+
   }
 }
 
@@ -142,4 +153,8 @@
 .bottom .testimonials-middle {
   // padding-top: 15%;
   align-self: flex-end;
+}
+
+#p-white {
+  color: white;
 }

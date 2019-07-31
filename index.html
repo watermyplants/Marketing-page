@@ -26,7 +26,10 @@
       <div class="tab">
         <!-- <a href="index.html">Home</a> -->
         <a href="about.html">About Us</a>
-        <button class="log-in btn">Log In</button>
+        <a class="no-show" href="about.html">Log In</a>
+        <a class="no-show" href="about.html">Sign Up</a>
+
+        <button class="log-in btn" onclick="window.location.href='about.html'">Log In</button>
         <button class="sign-up btn">Sign Up</button>
       </div>
     </nav>
@@ -44,7 +47,7 @@
         <div class="main-content">
           <h1>Water My Plants</h1>
           <h3>The water reminder app for your plants</h3>
-          <p class="p-white">It’s easy to forget to water your plants, but it doesn’t have to be. Water My Plants reminds you to water
+          <p id="p-white">It’s easy to forget to water your plants, but it doesn’t have to be. Water My Plants reminds you to water
             plants through game-like notifications, plant-selfies, and time-lapse videos so you can watch your happy
             plants grow baby grow.</p>
           <button class="btn yellow-btn">Get started for free</button>
@@ -147,6 +150,7 @@
     </footer>
   </div>
   <!-- container ends here -->
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
