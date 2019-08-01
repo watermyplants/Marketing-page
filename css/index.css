@@ -782,6 +782,12 @@ p {
     align-self: flex-end;
   }
 }
+@media (max-width: 800px) {
+  .bottom .testimonials .img-last {
+    align-self: flex-start;
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 500px) {
   .bottom .testimonials .img-last {
     align-self: flex-start;

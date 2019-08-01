@@ -237,14 +237,6 @@ p {
 
 .bottom .testimonials .img-right {
   align-self: flex-end;
-
-  // @media @tablet-small {
-  //   align-self: center;
-  // }
-
-  // @media @phone {
-  //   align-self: center;
-  // }
 }
 
 .bottom .testimonials-middle {
@@ -308,6 +300,12 @@ p {
 }
 
 .bottom .testimonials .img-last {
+
+  @media @tablet-small {
+    align-self: flex-start;
+    margin-bottom: 0;
+  }
+
   @media @phone {
     align-self: flex-start;
     margin-bottom: 0;
