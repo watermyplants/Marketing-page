@@ -238,13 +238,13 @@ p {
 .bottom .testimonials .img-right {
   align-self: flex-end;
 
-  @media @tablet-small {
-    align-self: center;
-  }
+  // @media @tablet-small {
+  //   align-self: center;
+  // }
 
-  @media @phone {
-    align-self: center;
-  }
+  // @media @phone {
+  //   align-self: center;
+  // }
 }
 
 .bottom .testimonials-middle {
@@ -286,12 +286,31 @@ p {
 
   @media @tablet-small {
     width: 25%;
-    align-self: center;
+    margin-bottom: 20px;
   }
 
   @media @phone {
     width: 25%;
-    align-self: center;
+    // align-self: center;
+  }
+}
+
+.testimonials .img-left {
+  @media @phone {
+    align-self: flex-start;
+  }
+}
+
+.bottom .testimonials .img-middle {
+  @media @phone {
+    align-self: flex-end;
+  }
+}
+
+.bottom .testimonials .img-last {
+  @media @phone {
+    align-self: flex-start;
+    margin-bottom: 0;
   }
 }
 
