@@ -498,6 +498,13 @@ address {
   display: flex;
   justify-content: space-around;
 }
+.love {
+  text-align: center;
+  margin-top: 20px;
+}
+.fa-heart {
+  color: crimson;
+}
 .section-top {
   background: #A1FFCE;
   /* fallback for old browsers */
