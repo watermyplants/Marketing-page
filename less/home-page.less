@@ -1,14 +1,22 @@
 // Home Content
 // Eralp Kor
 
+// .container {
+//   width: 90%;
+// }
+
 .section-top {
   background: #A1FFCE;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(119.38deg, #99DE99 0%, #258D79 100%);
-  background: linear-gradient(119.38deg, #99DE99 0%, #258D79 100%);
-  // height: 990px;
+  background: linear-gradient(119.38deg, #7EFF7D 0%, #258D79 100%);
   padding-top: 2%;
   padding-bottom: 5%;
+
+  @media @phone {
+    background: #1c9179;
+    padding: 0;
+  }
 }
 
 .section-top h2 {
@@ -24,19 +32,52 @@
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  width: 100%;
+  .width();
   max-width: 1140px;
   margin: 0 auto;
-  padding-bottom: 3%;
+  padding: 0 20px 3% 20px;
+
+
+  @media @tablet {
+    flex-direction: column;
+    width: 90%;
+  }
 }
 
 .main-content h1 {
   font-weight: 600;
+  text-shadow: 2px 2px 2px rgba(36, 81, 33, 0.63);
 }
 
-.main-content h1, h3, p {
+.main-content h1,
+h3,
+p {
   color: white;
   padding-top: 20px;
+  text-shadow: 1px 1px 1px rgba(36, 81, 33, 0.63);
+
+  @media @phone {
+    text-shadow: none;
+  }
+}
+
+.main-content {
+
+  img {
+    @media @tablet-small {
+      .width();
+    }
+  }
+
+  @media @phone {
+    img {
+      display: none;
+    }
+  }
+
+  @media @tablet {
+    padding: 5%;
+  }
 }
 
 .main-content button {
@@ -47,12 +88,19 @@
   border-radius: 39px;
   margin-top: 5%;
   height: 65px;
-  
+
   &:hover {
     color: darken(#007156, 50%);
     background-color: darken(#78C885, 10%);
 
     .hover();
+  }
+
+  @media @phone {
+    .button(@second-btn, #5B5B5B, 5px 20px, center, none, 20px, 175px);
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 45px;
   }
 }
 
@@ -61,6 +109,14 @@
   justify-content: space-around;
   max-width: 1140px;
   margin: 0 auto;
+
+  @media @tablet {
+    width: 90%;
+  }
+
+  @media @phone {
+    .width();
+  }
 }
 
 
@@ -68,18 +124,57 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  .width();
   margin: 0 auto;
+  padding: 0 20px;
+
+
+  @media @tablet {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 750px;
+
+    .rectangle {
+      margin-bottom: 6%;
+      width: 90%;
+      padding: 5%;
+    }
+  }
+
+  @media @phone {
+    padding-top: 5%;
+
+    .rectangle {
+      .width();
+      border-radius: 0;
+      background: whitesmoke;
+    }
+  }
+
+
 }
 
 .about-bottom p {
   color: #6E6E6E;
   font-size: 1.9rem;
+
+  @media @phone {
+    color: black;
+    font-size: 1.5rem;
+  }
 }
 
 .section-bottom {
   padding-top: 7%;
-  // height: 700px;
+  height: auto;
+
+  @media @tablet-small {
+    padding: 10% 5% 7%;
+  }
+
+  @media @phone {
+    padding: 10% 5% 10%;
+  }
 }
 
 .section-bottom h2 {
@@ -87,6 +182,14 @@
   text-align: center;
   font-weight: 600;
   margin-bottom: -60px;
+
+  @media @tablet-small {
+    margin-bottom: 10px;
+  }
+
+  @media @phone {
+    margin-bottom: 10px;
+  }
 }
 
 .bottom {
@@ -97,18 +200,103 @@
   // margin-top: -100px;
   margin: 0 auto;
   height: 450px;
+
+  @media @tablet-small {
+    flex-direction: column;
+    height: auto;
+    .width(90%);
+    margin: 0 auto;
+    
+  }
+
+  @media @phone {
+    flex-direction: column;
+    // justify-content: center;
+    // align-content: center;
+    height: auto;
+    .width();
+    margin: 0 auto;
+  }
 }
 
-.bottom .testimonials p{
-  color:#3E3E3E;
+.bottom .testimonials p {
+  color: #3E3E3E;
   text-align: center;
+
+  @media @tablet-small {
+    .width(80%);
+    margin: 0 auto;
+  }
 }
 
 .bottom .testimonials .img-right {
   align-self: flex-end;
+
+  @media @tablet-small {
+    align-self: center;
+  }
+
+  @media @phone {
+    align-self: center;
+  }
 }
 
 .bottom .testimonials-middle {
   // padding-top: 15%;
   align-self: flex-end;
+}
+
+.rectangle p {
+  letter-spacing: 0.13px;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: auto;
+  padding: 2%;
+
+  @media @tablet-small {
+    .width();
+    margin: 0 auto;
+  }
+
+  @media @phone {
+    .width();
+    margin: 0 auto;
+  }
+}
+
+.testimonials p {
+  letter-spacing: 0.1px;
+  font-size: 1.4rem;
+}
+
+.testimonials img {
+  width: 50%;
+  height: auto;
+  margin-top: 30px;
+
+  @media @tablet-small {
+    width: 25%;
+    align-self: center;
+  }
+
+  @media @phone {
+    width: 25%;
+    align-self: center;
+  }
+}
+
+.testimonials .fas {
+  color: @primary;
+}
+
+.testimonials span {
+  color: white;
+}
+
+#p-white {
+  color: white;
 }

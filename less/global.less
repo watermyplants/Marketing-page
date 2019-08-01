@@ -13,7 +13,7 @@ body {
   color: @main-font-color;
 }
 
-h1{
+h1 {
   font-size: 3rem;
 }
 
@@ -56,7 +56,7 @@ p {
   // .border();
   .round-borders();
 
-  btn:focus {
+  &:focus {
     outline: 0;
   }
 }
@@ -64,43 +64,24 @@ p {
 .rectangle {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 300px;
   height: auto;
   padding: 2%;
   border-radius: 15px;
   background-color: @rectangle;
-  text-align: center;
-}
+  // text-align: center;
+  box-shadow: 5px 10px 18px #888888;
+  margin-bottom: 5%;
 
-.rectangle p {
-  letter-spacing: 0.13px;
-}
+  img {
+    width: 30%;
+    clip-path: circle(50% at 50% 50%);
+  }
 
-.testimonials {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  height: auto;
-  padding: 2%;
-}
-
-.testimonials p {
-  letter-spacing: 0.1px;
-  font-size: 1.4rem;
-}
-
-.testimonials img {
-  width: 50%;
-  height: auto;
-  margin-top: 30px;
-  // margin-top: 1%;
-}
-
-.testimonials .fas {
-  color: @primary;
-}
-
-.testimonials span {
-  color: white;
+  @media @tablet {
+    margin-bottom: 6%;
+    width: 80%;
+  }
 }
 
