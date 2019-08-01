@@ -1,123 +1,76 @@
-// Footer Styles
+// // Footer Styles
+
 footer {
   background-color: #556E64;
-  padding: 5px 0 25px 0;
-}
+  color: white;
+  padding: 3%;
 
-.footer .copy-right {
-  align-self: flex-end;
-  text-align: center;
+  p, a {
+    color: white;
+    text-shadow: none;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .footer {
-  font-family: 'Roboto', sans-serif;
-  height: 130px;
+  max-width: 1200px;
+  margin: 0 auto;
+  // padding-bottom: 30px;
+}
+
+footer .footer {
   display: flex;
   justify-content: space-between;
-  max-width: 1260px;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  .footer-hide {
-    display: none;
-  }
-
-  @media @tablet {
-    max-width: 90%;
-  }
 
   @media @phone {
     flex-direction: column;
-    justify-content: center;
-    height: auto;
-    width: auto;
-
-    address {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .hide-me {
-      display: block;
-    }
-    .copy-right {
-      display: none;
-      // align-self: auto;
-      // padding-bottom: 2%;
-    }
+    align-items: center;
+    text-align: center;
   }
 }
 
-
-.footer p {
-  font-size: 11px;
-  line-height: 1px;
-  letter-spacing: 0.5px;
-  font-weight: lighter;
-  color: white;
-  .width();
+address {
+  margin-bottom: 12px;
 }
 
-.footer .copy-right {
-  @media @tablet-small {
-    .width();
-    // margin-bottom: -20px;
-  }
-}
-
-footer span {
-  font-weight: 400;
-}
-
-footer i {
-  color: white;
-}
-
-.footer .social {
-  // width: 130px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.copy-right {
+  align-self: flex-end;
 
   @media @phone {
-    .width();
+    order: 3;
+    align-self: center;
   }
 }
 
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.contact-info {
+
+  @media @phone {
+    order: 2;
+    padding-bottom: 15px;
+  }
+}
+
+.footer .footer-right {
   width: 160px;
 
-  @media @tablet {
-    justify-content: flex-start;
-    padding-top: 20px;
-  }
-
   @media @phone {
-    align-items: center;
-    justify-content: space-around;
-    // width: auto;
-    margin: 0 auto;
-    padding-top: 5%;
-
+    order: 1;
+    padding-bottom: 15px;
+    
   }
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
 }
 
 .policy {
   display: flex;
-  justify-content: space-between;
-}
-
-// Remove add classes with javascipt
-.remove {
-  display: none;
-}
-
-.mobile {
-  // display: block;
-  text-align: center;
+  justify-content: space-around;
 }

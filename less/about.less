@@ -8,7 +8,7 @@ header .navigation .about-tab {
     width: 100%;
   }
 }
-
+// full size image
 .hero-image {
   background-image: url("../img/hero-plant-3.jpg");
   height: 600px;
@@ -16,6 +16,14 @@ header .navigation .about-tab {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
+  @media @tablet {
+    background-image: url("../img/hero-plant-3_ounftk.jpg");
+  }
+
+  @media @phone {
+    background-image: url("../img/hero-plant-3_mobile.jpg");
+  }
 }
 
 .hero-text {
