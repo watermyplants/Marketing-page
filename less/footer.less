@@ -39,6 +39,9 @@ footer {
       align-items: center;
     }
 
+    .hide-me {
+      display: block;
+    }
     .copy-right {
       display: none;
       // align-self: auto;
@@ -54,6 +57,14 @@ footer {
   letter-spacing: 0.5px;
   font-weight: lighter;
   color: white;
+  .width();
+}
+
+.footer .copy-right {
+  @media @tablet-small {
+    .width();
+    // margin-bottom: -20px;
+  }
 }
 
 footer span {
@@ -63,8 +74,6 @@ footer span {
 footer i {
   color: white;
 }
-
-
 
 .footer .social {
   // width: 130px;
