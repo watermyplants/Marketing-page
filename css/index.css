@@ -785,7 +785,19 @@ p {
     margin-left: 50px;
   }
 }
+@media (max-width: 800px) {
+  .testimonials .img-left {
+    align-self: flex-start;
+    margin-left: 50px;
+  }
+}
 @media (max-width: 500px) {
+  .bottom .testimonials .img-middle {
+    align-self: flex-end;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 800px) {
   .bottom .testimonials .img-middle {
     align-self: flex-end;
     margin-right: 50px;
@@ -812,6 +824,9 @@ p {
 }
 #p-white {
   color: white;
+}
+#greeting {
+  margin-top: 20px;
 }
 .section-join {
   background: #007156;

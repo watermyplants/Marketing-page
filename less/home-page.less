@@ -292,10 +292,20 @@ p {
     align-self: flex-start;
     margin-left: 50px;
   }
+
+  @media @tablet-small {
+    align-self: flex-start;
+    margin-left: 50px;
+  }
 }
 
 .bottom .testimonials .img-middle {
   @media @phone {
+    align-self: flex-end;
+    margin-right: 50px;
+  }
+
+  @media @tablet-small {
     align-self: flex-end;
     margin-right: 50px;
   }
@@ -325,4 +335,8 @@ p {
 
 #p-white {
   color: white;
+}
+
+#greeting {
+  margin-top: 20px;
 }
