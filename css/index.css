@@ -775,17 +775,20 @@ p {
 @media (max-width: 500px) {
   .testimonials .img-left {
     align-self: flex-start;
+    margin-left: 50px;
   }
 }
 @media (max-width: 500px) {
   .bottom .testimonials .img-middle {
     align-self: flex-end;
+    margin-right: 50px;
   }
 }
 @media (max-width: 800px) {
   .bottom .testimonials .img-last {
     align-self: flex-start;
     margin-bottom: 0;
+    margin-left: 50px;
   }
 }
 @media (max-width: 500px) {
