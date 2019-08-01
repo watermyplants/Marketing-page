@@ -435,7 +435,7 @@ header .navigation .tab button {
 footer {
   background-color: #556E64;
   color: white;
-  padding: 3%;
+  padding: 3% 3% 2%;
 }
 footer p,
 footer a {
@@ -492,6 +492,7 @@ address {
 .social {
   display: flex;
   justify-content: space-around;
+  padding: 10px 0;
 }
 .policy {
   display: flex;
