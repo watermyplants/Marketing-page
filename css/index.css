@@ -1033,6 +1033,7 @@ header .navigation .about-tab {
 .top h3,
 p {
   color: black;
+  text-shadow: none;
 }
 @media (max-width: 500px) {
   .top h3,
