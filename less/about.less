@@ -1,3 +1,4 @@
+// navigation bar settings, adding home anchor
 header .navigation .about-tab {
   display: flex;
   align-items: center;
@@ -8,6 +9,7 @@ header .navigation .about-tab {
     width: 100%;
   }
 }
+
 // full size image
 .hero-image {
   background-image: url("../img/hero-plant-3.jpg");
@@ -59,7 +61,7 @@ header .navigation .about-tab {
   }
 
   @media @phone {
-  .button(@second-btn, #5B5B5B, 10px 25px, center, none, 15px, 200px);
+    .button(@second-btn, #5B5B5B, 10px 25px, center, none, 15px, 200px);
     height: 55px;
     margin-bottom: 15%;
   }
@@ -72,7 +74,7 @@ header .navigation .about-tab {
   margin-bottom: 3%;
 
   @media @tablet-small {
-   font-size: 1.7em;
+    font-size: 1.7em;
   }
 }
 
@@ -110,18 +112,22 @@ header .navigation .about-tab {
   }
 }
 
-.top h3, p{
+.top h3,
+p {
   color: black;
 
   @media @phone {
     color: white;
     line-height: 150%;
   }
-
 }
 
 .dev-team {
   background: #99DE99;
+
+  @media @phone {
+    padding-top: 5%;
+  }
 }
 
 .container-fluid {
@@ -135,10 +141,6 @@ header .navigation .about-tab {
   @media @tablet {
     .width(90);
     height: auto;
-  }
-
-  @media @phone {
-    .width();
   }
 }
 
@@ -164,12 +166,10 @@ header .navigation .about-tab {
 
 .build-team {
   display: flex;
-  // align-items: center;//
   justify-content: space-between;
   align-content: space-between;
-  // flex-flow: column wrap;//
   flex-wrap: wrap;
-  
+
 
   .last {
     align-self: center;
@@ -196,6 +196,7 @@ header .navigation .about-tab {
   @media @phone {
     .width();
     padding: 5% 0;
+
     .rectangle {
       .width();
       border-radius: 0;
@@ -203,11 +204,6 @@ header .navigation .about-tab {
     }
   }
 }
-
-// .last {
-//   align-self: auto;
-//   // flex-grow: 1;
-// }
 
 .rectangle>h3 {
   padding-bottom: 5%;
@@ -220,7 +216,3 @@ header .navigation .about-tab {
   padding-bottom: 5%;
 }
 
-// .rectangle-group {
-//   display: flex;
-
-// }
