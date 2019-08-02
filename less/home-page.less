@@ -53,7 +53,7 @@
 h3,
 p {
   color: white;
-  padding-top: 20px;
+  // padding-top: 20px;
   text-shadow: 1px 1px 1px rgba(36, 81, 33, 0.63);
 
   @media @phone {
@@ -61,7 +61,13 @@ p {
   }
 }
 
+#p-white {
+  padding-top: 20px;
+}
+
 .main-content {
+
+  
 
   img {
     @media @tablet-small {
@@ -231,14 +237,6 @@ p {
 
 .bottom .testimonials .img-right {
   align-self: flex-end;
-
-  @media @tablet-small {
-    align-self: center;
-  }
-
-  @media @phone {
-    align-self: center;
-  }
 }
 
 .bottom .testimonials-middle {
@@ -280,12 +278,50 @@ p {
 
   @media @tablet-small {
     width: 25%;
-    align-self: center;
+    margin-bottom: 20px;
   }
 
   @media @phone {
     width: 25%;
-    align-self: center;
+    // align-self: center;
+  }
+}
+
+.testimonials .img-left {
+  @media @phone {
+    align-self: flex-start;
+    margin-left: 50px;
+  }
+
+  @media @tablet-small {
+    align-self: flex-start;
+    margin-left: 50px;
+  }
+}
+
+.bottom .testimonials .img-middle {
+  @media @phone {
+    align-self: flex-end;
+    margin-right: 50px;
+  }
+
+  @media @tablet-small {
+    align-self: flex-end;
+    margin-right: 50px;
+  }
+}
+
+.bottom .testimonials .img-last {
+
+  @media @tablet-small {
+    align-self: flex-start;
+    margin-bottom: 0;
+    margin-left: 50px;
+  }
+
+  @media @phone {
+    align-self: flex-start;
+    margin-bottom: 0;
   }
 }
 
@@ -299,4 +335,8 @@ p {
 
 #p-white {
   color: white;
+}
+
+#greeting {
+  margin-top: 20px;
 }
