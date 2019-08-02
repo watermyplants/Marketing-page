@@ -94,12 +94,16 @@ header .navigation .about-tab {
 }
 
 .top {
-  max-width: 700px;
+  max-width: 780px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 5%;
+  padding: 5% 0 5% 0;
   margin: 0 auto;
+
+  p {
+    padding: 3% 0 2% 0;
+  }
 
   @media @tablet {
     .width(90%);
@@ -111,7 +115,7 @@ header .navigation .about-tab {
     text-align: center;
   }
 }
-
+// :first-of-type
 .top h3,
 p {
   color: black;
