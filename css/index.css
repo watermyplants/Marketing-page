@@ -1104,6 +1104,7 @@ p {
 @media (max-width: 500px) {
   .build-team {
     width: 100%;
+    padding: 5% 0;
   }
   .build-team .rectangle {
     width: 100%;
