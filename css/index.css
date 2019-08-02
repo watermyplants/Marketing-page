@@ -216,7 +216,12 @@ p {
 @media (max-width: 1000px) {
   .rectangle {
     margin-bottom: 6%;
-    width: 80%;
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .rectangle {
+    width: 70%;
   }
 }
 @media (max-width: 1000px) {
